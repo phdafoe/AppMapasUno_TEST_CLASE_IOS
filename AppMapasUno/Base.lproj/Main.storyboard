@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zcs-FZ-DOz">
-                                <rect key="frame" x="0.0" y="70" width="375" height="454"/>
+                                <rect key="frame" x="0.0" y="11" width="375" height="513"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tg-vP-MiS">
                                 <rect key="frame" x="0.0" y="583" width="375" height="35"/>
@@ -48,7 +48,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SDj-Qy-W97">
-                                <rect key="frame" x="14" y="34" width="348" height="29"/>
+                                <rect key="frame" x="14" y="469" width="348" height="29"/>
                                 <segments>
                                     <segment title="Mapa"/>
                                     <segment title="Hibrido"/>
@@ -63,17 +63,17 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="zcs-FZ-DOz" secondAttribute="trailing" id="3Do-gB-rGW"/>
                             <constraint firstItem="BaL-EE-sU9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5yD-Cd-L4s"/>
+                            <constraint firstItem="BaL-EE-sU9" firstAttribute="top" secondItem="SDj-Qy-W97" secondAttribute="bottom" constant="35" id="9Cn-DV-2Df"/>
                             <constraint firstAttribute="trailing" secondItem="BaL-EE-sU9" secondAttribute="trailing" id="Bxq-uG-Ifs"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6Tg-vP-MiS" secondAttribute="bottom" id="Whs-z1-dKf"/>
-                            <constraint firstItem="SDj-Qy-W97" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="14" id="gcE-I0-oQG"/>
+                            <constraint firstItem="SDj-Qy-W97" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="14" id="Zql-wu-Mtp"/>
                             <constraint firstAttribute="trailing" secondItem="6Tg-vP-MiS" secondAttribute="trailing" id="hoG-gF-vBx"/>
                             <constraint firstItem="6Tg-vP-MiS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="n03-y5-Y0w"/>
-                            <constraint firstItem="zcs-FZ-DOz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="70" id="oa4-x4-iBw"/>
+                            <constraint firstItem="zcs-FZ-DOz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="11" id="oa4-x4-iBw"/>
                             <constraint firstItem="6Tg-vP-MiS" firstAttribute="top" secondItem="BaL-EE-sU9" secondAttribute="bottom" id="se7-eI-Oyl"/>
                             <constraint firstItem="zcs-FZ-DOz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="stF-Ve-xWN"/>
-                            <constraint firstAttribute="trailing" secondItem="SDj-Qy-W97" secondAttribute="trailing" constant="13" id="syb-Qu-4MY"/>
                             <constraint firstItem="BaL-EE-sU9" firstAttribute="top" secondItem="zcs-FZ-DOz" secondAttribute="bottom" constant="8" id="thx-ga-4s5"/>
-                            <constraint firstItem="SDj-Qy-W97" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="vZ5-RS-KIV"/>
+                            <constraint firstAttribute="trailing" secondItem="SDj-Qy-W97" secondAttribute="trailing" constant="13" id="yHJ-sV-Ddl"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Mi Casa" id="xoo-jr-GX4"/>
@@ -85,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="939" y="-346"/>
+            <point key="canvasLocation" x="938.39999999999998" y="-346.77661169415296"/>
         </scene>
         <!--Mi GPS-->
         <scene sceneID="cPN-4a-XaX">
@@ -264,18 +264,18 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rYB-Xm-UfM" id="pWJ-4W-fkM">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DZC-XJ-Kod">
-                                            <rect key="frame" x="15" y="4" width="34" height="21"/>
+                                            <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C5D-4f-wEC">
-                                            <rect key="frame" x="15" y="25" width="44" height="15"/>
+                                            <rect key="frame" x="15" y="25.5" width="44" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
@@ -283,6 +283,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Nga-uE-OmC" kind="push" id="3yA-jh-Fpz"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -293,7 +296,7 @@
                     <navigationItem key="navigationItem" title="Lista de Lugares" id="qJw-lh-dyC">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="rfL-Xs-QTi">
                             <connections>
-                                <segue destination="Nga-uE-OmC" kind="push" id="1ok-Vf-OOA"/>
+                                <segue destination="Nga-uE-OmC" kind="push" identifier="muestraMapaSinSeleccionDeCelda" id="1ok-Vf-OOA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -355,4 +358,7 @@
             <point key="canvasLocation" x="937" y="1166"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="1ok-Vf-OOA"/>
+    </inferredMetricsTieBreakers>
 </document>

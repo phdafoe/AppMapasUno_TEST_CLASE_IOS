@@ -14,6 +14,7 @@ class MAMapaLugarFavoritoViewController: UIViewController {
     
     //MARK: - Variables locales
     var locationManager = CLLocationManager()
+    var taskManager = APITaskManager.shared
     
     //MARK: - IBOutlets
     @IBOutlet weak var myMapViewLugaresFavoritos: MKMapView!
@@ -22,11 +23,30 @@ class MAMapaLugarFavoritoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Location manager
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.startUpdatingLocation()
+        
+        if customLugarSeleccionado == -1{
+            //Location manager
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.delegate = self
+            locationManager.requestWhenInUseAuthorization()
+            locationManager.startUpdatingLocation()
+        }else{
+            let customLat = NSString(string: taskManager.latitud[customLugarSeleccionado]["latitud"]!).doubleValue
+            
+            let customLong = NSString(string: taskManager.longitud[customLugarSeleccionado]["longitud"]!).doubleValue
+            
+            let location = CLLocationCoordinate2D(latitude: customLat, longitude: customLong)
+            
+            let region = MKCoordinateRegion(center: location, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+            
+            myMapViewLugaresFavoritos.setRegion(region, animated: true)
+            
+            let customAnnotation = MKPointAnnotation()
+            customAnnotation.coordinate = location
+            customAnnotation.title = taskManager.latitud[customLugarSeleccionado]["latitud"]
+            myMapViewLugaresFavoritos.addAnnotation(customAnnotation)
+            
+        }
         
         
         let longPressGR = UILongPressGestureRecognizer(target: self, action: #selector(self.actionCreaChincheta(_:)))
@@ -64,6 +84,11 @@ class MAMapaLugarFavoritoViewController: UIViewController {
                 if customTitle == ""{
                     customTitle = "Punto añadido el \(Date())"
                 }
+                
+                
+                
+                
+                
                 //Creamos la anotacion
                 let annotation = MKPointAnnotation()
                 annotation.coordinate = nuevaCoordenada
@@ -72,6 +97,12 @@ class MAMapaLugarFavoritoViewController: UIViewController {
                 
                 //Guardamos en nuestro array de diccionario
                 customLugares.append(["name": customTitle, "lat": "\(nuevaCoordenada.latitude)", "long": "\(nuevaCoordenada.longitude)"])
+                
+                APITaskManager.shared.latitud.append(["latitud" : String(nuevaCoordenada.latitude)])
+                APITaskManager.shared.longitud.append(["longitud" : String(nuevaCoordenada.longitude)])
+                
+                APITaskManager.shared.salvarDatos()
+                
             }
         }
     }

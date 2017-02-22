@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8B1626041E5B7FA000C39CB0 /* MAListaLugaresFavoritosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1626031E5B7FA000C39CB0 /* MAListaLugaresFavoritosTableViewController.swift */; };
 		8B1626061E5B7FB900C39CB0 /* MAMapaLugarFavoritoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1626051E5B7FB900C39CB0 /* MAMapaLugarFavoritoViewController.swift */; };
+		8B4A7D101E5E15F2002DF3F5 /* APITaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A7D0F1E5E15F2002DF3F5 /* APITaskManager.swift */; };
 		8BBE7A021E524D920059EFBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBE7A011E524D920059EFBD /* AppDelegate.swift */; };
 		8BBE7A041E524D920059EFBD /* MAPrimerMapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBE7A031E524D920059EFBD /* MAPrimerMapaViewController.swift */; };
 		8BBE7A071E524D920059EFBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BBE7A051E524D920059EFBD /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		8B1626031E5B7FA000C39CB0 /* MAListaLugaresFavoritosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAListaLugaresFavoritosTableViewController.swift; sourceTree = "<group>"; };
 		8B1626051E5B7FB900C39CB0 /* MAMapaLugarFavoritoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAMapaLugarFavoritoViewController.swift; sourceTree = "<group>"; };
+		8B4A7D0F1E5E15F2002DF3F5 /* APITaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APITaskManager.swift; sourceTree = "<group>"; };
 		8BBE79FE1E524D920059EFBD /* AppMapasUno.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppMapasUno.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BBE7A011E524D920059EFBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BBE7A031E524D920059EFBD /* MAPrimerMapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAPrimerMapaViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				8BBE7A011E524D920059EFBD /* AppDelegate.swift */,
+				8B4A7D0F1E5E15F2002DF3F5 /* APITaskManager.swift */,
 				8B1626071E5B7FC100C39CB0 /* VIEWS_CONTROLLERS */,
 				8BBE7A051E524D920059EFBD /* Main.storyboard */,
 				8BBE7A081E524D920059EFBD /* Assets.xcassets */,
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B1626061E5B7FB900C39CB0 /* MAMapaLugarFavoritoViewController.swift in Sources */,
+				8B4A7D101E5E15F2002DF3F5 /* APITaskManager.swift in Sources */,
 				8BE921861E54F04600DCC066 /* MADatosAlfanumericosViewController.swift in Sources */,
 				8B1626041E5B7FA000C39CB0 /* MAListaLugaresFavoritosTableViewController.swift in Sources */,
 				8BBE7A041E524D920059EFBD /* MAPrimerMapaViewController.swift in Sources */,
